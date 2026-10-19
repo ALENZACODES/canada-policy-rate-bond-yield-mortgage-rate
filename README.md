@@ -2,7 +2,7 @@
 
 By John Khan
 
-**Kaggle notebook:** coming soon <!-- KAGGLE_URL -->
+**Kaggle notebook:** [Who Sets Canada's 5 Year Mortgage Rate? on Kaggle](https://www.kaggle.com/code/johnnykhan1/who-sets-canada-s-5-year-mortgage-rate)
 
 ## Question
 
