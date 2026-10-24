@@ -1,5 +1,9 @@
 # Who Sets Canada's 5 Year Mortgage Rate?
 
+**Policy rate vs 5 year GoC bond vs posted and actual 5 year mortgage rates in Canada, using live Bank of Canada data.**
+
+[![Kaggle notebook](https://img.shields.io/badge/Kaggle-notebook-011F5B?style=flat-square&logo=kaggle&logoColor=white)](https://www.kaggle.com/code/johnnykhan1/who-sets-canada-s-5-year-mortgage-rate) [![Licence: MIT](https://img.shields.io/badge/licence-MIT-990000?style=flat-square)](LICENSE) ![Built with Python notebook](https://img.shields.io/badge/built_with-Python_notebook-4a4a4a?style=flat-square)
+
 By John Khan
 
 **Kaggle notebook:** [Who Sets Canada's 5 Year Mortgage Rate? on Kaggle](https://www.kaggle.com/code/johnnykhan1/who-sets-canada-s-5-year-mortgage-rate)
@@ -8,17 +12,7 @@ By John Khan
 
 Does Canada's five year fixed mortgage rate follow the Bank of Canada policy rate or the five year Government of Canada bond yield, and how far above the bond do posted and actual mortgage rates sit?
 
-## Data sources
-
-* Bank of Canada Valet API, https://www.bankofcanada.ca/valet/docs
-* `V39079` target for the overnight rate
-* `BD.CDN.5YR.DQ.YLD` 5 year Government of Canada benchmark bond yield
-* `V80691335` posted 5 year conventional mortgage rate
-* `V122667786` rate on new uninsured fixed 5 years and over mortgages, chartered banks
-
-The notebook pulls everything live from the Bank of Canada Valet API. A snapshot of the data from the last run is in `data/`, and the notebook falls back to it if the API is unreachable.
-
-## Findings
+## Results
 
 *Figures below are from the run on October 18, 2026, with daily data through October 15, 2026 and actual lending rates through July 2026.*
 
@@ -32,14 +26,13 @@ The notebook pulls everything live from the Bank of Canada Valet API. A snapshot
 
 **What this means for a borrower.** If you are shopping for a five year fixed rate, watch the five year Government of Canada bond, not the next rate announcement. A sustained move in the bond tends to reach lender rate sheets within one to two months.
 
-
 ## Charts
 
 ![01_four_rates.png](charts/01_four_rates.png)
 ![02_changes_scatter.png](charts/02_changes_scatter.png)
 ![03_spreads.png](charts/03_spreads.png)
 
-## Run it
+## Quick start
 
 ```
 pip install -r requirements.txt
@@ -48,6 +41,20 @@ jupyter nbconvert --to notebook --execute canada-policy-rate-bond-yield-mortgage
 
 On Kaggle, keep Internet on in the notebook settings, or upload the CSVs in `data/` as a dataset.
 
-## License
+## Data and sources
+
+* Bank of Canada Valet API, https://www.bankofcanada.ca/valet/docs
+* `V39079` target for the overnight rate
+* `BD.CDN.5YR.DQ.YLD` 5 year Government of Canada benchmark bond yield
+* `V80691335` posted 5 year conventional mortgage rate
+* `V122667786` rate on new uninsured fixed 5 years and over mortgages, chartered banks
+
+The notebook pulls everything live from the Bank of Canada Valet API. A snapshot of the data from the last run is in `data/`, and the notebook falls back to it if the API is unreachable.
+
+## Licence
 
 Code is MIT licensed. Data belongs to its publishers and is used under their terms (Bank of Canada: https://www.bankofcanada.ca/terms/, Statistics Canada Open Licence: https://www.statcan.gc.ca/en/terms-conditions/open-licence).
+
+---
+
+More of my work is on my [GitHub profile](https://github.com/ALENZACODES).
