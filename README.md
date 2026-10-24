@@ -1,3 +1,5 @@
+![Who Sets the 5 Year Mortgage Rate](assets/banner.png)
+
 # Who Sets Canada's 5 Year Mortgage Rate?
 
 **Policy rate vs 5 year GoC bond vs posted and actual 5 year mortgage rates in Canada, using live Bank of Canada data.**
